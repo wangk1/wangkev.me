@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+	<TITLE>Kevin Wang</TITLE>
+
+	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" >	
+
+	
+
+	<!--Javascript-->
+	<!--Basic angular installation-->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.7/angular.min.js"></script>
+
+</HEAD>
+
+</HTML>
