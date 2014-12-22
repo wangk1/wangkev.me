@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+.left{
+	float:left;
+
+}
+
+.right{
+	float:right;
+
+}
+
+/*Navigation Bar*/
+.main-nav ul{
+	padding:0;
+	list-style-type:none;
+	display:inline;
+	text-align: justify;
+	
+}
+
+.main-nav ul li{
+	display:inline;
+	width:10% !important;
+	
+	margin: 0px 10px 0px 10px;
+	text-align: justify;
+}
+
+
+
+.main-nav a{
+	color:#67677A;
+	font-size:150%;
+	font-weight:bold;
+	font-family: "Trebuchet MS";
+	
+	-webkit-transform:scale(1,1.5); /* Safari and Chrome */
+	-moz-transform:scale(1,1.5); /* Firefox */
+	-ms-transform:scale(1,1.5); /* IE 9+ */
+	-o-transform:scale(1,1.5); /* Opera */
+	
+}
+
+/*The home glyphicon*/
+.main-nav ul li a span{
+	font-size:40px;
+}
+
+.main-nav ul li a:hover span{
+	color:#FF9933;
+	
+}
