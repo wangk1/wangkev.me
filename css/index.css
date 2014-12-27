@@ -1,5 +1,13 @@
 @charset "utf-8";
 
+/* Main Page*/
+body{
+	background-image:url("../res/homebackground.jpg");
+	background-attachment: fixed;
+	background-size:cover;
+}
+
+
 .left{
 	float:left;
 
@@ -11,26 +19,30 @@
 }
 
 /*Navigation Bar*/
+.main-nav{
+	
+}
+
 .main-nav ul{
 	padding:0;
 	list-style-type:none;
-	display:inline;
-	text-align: justify;
+	display:table;
+	width:100%;
 	
 }
 
 .main-nav ul li{
-	display:inline;
-	width:10% !important;
+	display:table-cell;
+	margin:0 auto;
+	width:8%;
 	
-	margin: 0px 10px 0px 10px;
-	text-align: justify;
+	text-align: center;
 }
 
 
 
 .main-nav a{
-	color:#67677A;
+	color:#FF9933;
 	font-size:150%;
 	font-weight:bold;
 	font-family: "Trebuchet MS";
@@ -40,14 +52,15 @@
 	-ms-transform:scale(1,1.5); /* IE 9+ */
 	-o-transform:scale(1,1.5); /* Opera */
 	
+	-webkit-transition: text 1.0s;
 }
 
 /*The home glyphicon*/
 .main-nav ul li a span{
-	font-size:40px;
+	font-size:65px;
 }
 
 .main-nav ul li a:hover span{
-	color:#FF9933;
+	color:#94B8FF;
 	
 }
