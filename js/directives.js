@@ -10,3 +10,13 @@ directives.directive('dtNavigate',function() {
 
 
 });
+
+directives.directive('dtFooter',function() {
+	return {
+		templateUrl: 'partials/dt-footer.html',
+		
+		restrict:'E'
+
+	};
+
+});

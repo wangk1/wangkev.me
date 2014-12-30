@@ -1,10 +1,18 @@
 @charset "utf-8";
 
 /* Main Page*/
+html,body {
+	width:100%;
+	height:100%;
+
+}
+
 body{
+	
 	background-image:url("../res/homebackground.jpg");
 	background-attachment: fixed;
 	background-size:cover;
+	
 }
 
 
@@ -16,6 +24,21 @@ body{
 .right{
 	float:right;
 
+}
+/*The content container*/
+.content-container{
+	height:100%;
+	
+}
+
+/*The footer stuff*/
+.footer-container{
+	min-height:250px;
+	max-height:400px;
+	height:10%;
+	background-color:#3C3C3E;
+	border-radius: 10px 10px 0px 0px;
+	
 }
 
 /*Navigation Bar*/
@@ -39,20 +62,29 @@ body{
 	text-align: center;
 }
 
+.main-nav ul li a:hover{
+	text-decoration:none;
+	-webkit-transition: all 2s ease;
+	border-bottom: 2px solid black;
 
+}
 
 .main-nav a{
+	display: block;
+	padding:0px auto 0px auto;
+	border-bottom: 2px solid transparent;
+
 	color:#FF9933;
 	font-size:150%;
 	font-weight:bold;
 	font-family: "Trebuchet MS";
 	
-	-webkit-transform:scale(1,1.5); /* Safari and Chrome */
-	-moz-transform:scale(1,1.5); /* Firefox */
-	-ms-transform:scale(1,1.5); /* IE 9+ */
-	-o-transform:scale(1,1.5); /* Opera */
+	-webkit-transform:scale(1,1.25); /* Safari and Chrome */
+	-moz-transform:scale(1,1.25); /* Firefox */
+	-ms-transform:scale(1,1.25); /* IE 9+ */
+	-o-transform:scale(1,1.25); /* Opera */
 	
-	-webkit-transition: text 1.0s;
+	-webkit-transition: all 1s ease;
 }
 
 /*The home glyphicon*/
@@ -62,5 +94,6 @@ body{
 
 .main-nav ul li a:hover span{
 	color:#94B8FF;
+	border-color:transparent;
 	
 }
