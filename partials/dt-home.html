@@ -1,0 +1,25 @@
+
+
+<div class="container-table">
+
+	<table class="table table-striped">
+
+		<tr>
+			<th>
+				WEdit V1.0	
+			</th>
+		</tr>		
+		
+		<tr ng-repeat="line in lines.data" class="container-table-row">
+		
+			<td>
+				{{line.num}}
+			</td>
+
+			<td>
+				<input ng-model="line.val" class="form-control"></input>	
+			</td>
+		
+		</tr>
+	</table>
+</div>

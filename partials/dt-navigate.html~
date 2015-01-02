@@ -1,20 +1,20 @@
 
-<nav class="navbar navbar-fixed-bottom main-nav tbl-row" role="navigation" ng-controller='ctrlnav'>
+<nav class="navbar main-nav" role="navigation" ng-controller='ctrlnav'>
 	
-	<div class="container">
+	<div class="container" ng-controller='ctrlnav'>
 		<ul>
-			<li><a href="#/about">About</a></li>
+			<li><a href="#/about" ng-click='changeState("about")'>About</a></li>
 
-			<li><a href="#/fame">Claim to Fame</a></li>
+			<li><a href="#/fame" ng-click='changeState("fame")'>Claim to Fame</a></li>
 
-			<li><a href="#">
+			<li><a href="#/home" ng-click='changeState("home")'>
 				<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
 			</a></li>
 		
 
-			<li><a href="#/projects">Current Projects</a></li>
+			<li><a href="#/projects" ng-click='changeState("fame")'>Current Projects</a></li>
 
-			<li><a href="#/work">Work Experience</a></li>
+			<li><a href="#/work" ng-click='changeState("work")' >Work Experience</a></li>
 
 		</ul>	
 

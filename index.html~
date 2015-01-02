@@ -15,7 +15,7 @@
 
 	<!--Javascript-->
 	<!--Basic angular installation-->
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.7/angular.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.8/angular.js"></script>
 
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.8/angular-route.js"></script>
 		
@@ -27,10 +27,15 @@
 	
 	<script type="text/javascript" src="js/directives.js"></script>
 </HEAD>
-<body>
+<body ng-controller='ctrlmain'>
 
-<div class="content-container" ng-view>
+<!-- The main page view-->
 
+<div class="content-container">
+
+<ng-view>
+
+</ng-view>
 </div>
 
 <!--The Bottom navigation panel-->

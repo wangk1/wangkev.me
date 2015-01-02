@@ -27,7 +27,7 @@ body{
 }
 /*The content container*/
 .content-container{
-	height:100%;
+	height:90%;
 	
 }
 
@@ -43,7 +43,7 @@ body{
 
 /*Navigation Bar*/
 .main-nav{
-	
+	height:10%;
 }
 
 .main-nav ul{
@@ -95,5 +95,26 @@ body{
 .main-nav ul li a:hover span{
 	color:#94B8FF;
 	border-color:transparent;
+	
+}
+
+/*The front page editable table*/
+.container-table{
+	margin-left:auto;
+	margin-right:auto;
+	width:50%;
+	height:50%;
+	border-radius:10px;
+	
+}
+
+.container-table-row > td{
+	padding:0;
+	
+}
+
+.container-table-row td > input{
+	background:transparent;
+	width:100%;
 	
 }

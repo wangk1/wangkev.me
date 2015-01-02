@@ -27,10 +27,15 @@
 	
 	<script type="text/javascript" src="js/directives.js"></script>
 </HEAD>
-<body>
+<body ng-controller='ctrlmain'>
 
-<div class="content-container" ng-view>
+<!-- The main page view-->
 
+<div class="content-container">
+
+	<ng-view>
+
+	</ng-view>
 </div>
 
 <!--The Bottom navigation panel-->
