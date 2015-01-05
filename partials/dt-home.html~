@@ -1,12 +1,17 @@
-
+<div class="greeting-container">
+	<div class="greeting">Hello, Kevin here.</div>
+</div>
 
 <div class="container-table">
 
 	<table class="table table-striped">
 
 		<tr>
-			<th>
-				WEdit V1.0	
+			<th colspan="2">
+				Script Scratch V1.0	
+				
+				<button class="table-button btn btn-success" ng-click="submit()">Submit</button>	
+				<button class="table-button btn btn-info" ng-click="reset()">Default</button>
 			</th>
 		</tr>		
 		
@@ -17,7 +22,7 @@
 			</td>
 
 			<td>
-				<input ng-model="line.val"></input>	
+				<input ng-model="line.val" class="form-control"></input>	
 			</td>
 		
 		</tr>

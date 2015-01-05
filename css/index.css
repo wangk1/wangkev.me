@@ -63,11 +63,12 @@ body{
 }
 
 .main-nav ul li a:hover{
-	text-decoration:none;
+	text-decoration:none !important;
 	-webkit-transition: all 2s ease;
-	border-bottom: 2px solid black;
+	border-bottom: 2px solid orange;
 
 }
+
 
 .main-nav a{
 	display: block;
@@ -98,23 +99,72 @@ body{
 	
 }
 
-/*The front page editable table*/
+/*The home page editable table*/
+.greeting-container{
+	display:table;
+	width:100%;
+	height:30%;
+	min-height:200px;
+
+}
+
+.greeting{
+	display:table-cell;
+	
+	text-align:center;
+	vertical-align:middle;
+	
+	font-family:'Gloria Hallelujah',cursive;
+	font-size:45px;
+	color:#3B3B3C;
+}
+
+/*Container for the greeting div*/
+
+
+
+/*Container for the editor table*/
 .container-table{
 	margin-left:auto;
 	margin-right:auto;
-	width:50%;
-	height:50%;
+	width:40%;
+	min-width:500px;
+	height:35%;
+	min-height:250px;
 	border-radius:10px;
+	background-color:#E0E0E0;
+	overflow-x:hidden;
+	overflow-y:hidden;
 	
 }
 
+.table-button {
+	float:right;
+
+}
+
+.table-button:nth-child(2) {
+	margin-right:5px;
+	
+}
+
+.container-table-row > td:first-child{
+	color:#B3B3B3;
+	
+	border-right:1px solid grey;
+}
+
 .container-table-row > td{
-	padding:0;
+	padding:0 !important;
+	text-align:center;
+	
 	
 }
 
 .container-table-row td > input{
 	background:transparent;
 	width:100%;
-	
+	border:none;
+	padding:0;
+	font-size:20px;
 }

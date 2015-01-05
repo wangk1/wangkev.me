@@ -47,15 +47,56 @@ app.controller('ctrlhome',['$scope',function($scope) {
 		num:0,
 
 	};
+	
+	//the default array containing the data to be resetted when the button is clicked
+	$scope.default_val=["//Feel free to change things around",
+	"var node=document.getElementById('greeting');",
+	"node.innerHTML='Hello, Kevin here';"];
 
 	$scope.lines.data=[].concat((function c(number){
-				
-				return $scope.lines.num>8? [{num:number,val:""}]:
-	       					[{num:number,val:""}].concat(c(++$scope.lines.num));
+				return $scope.lines.num>8? [{num:number,val:$scope.default_val[number]}]:
+	       					[{num:number,val:$scope.default_val[number]}].concat(c(++$scope.lines.num));
 
 		     })(0));
 
+	
+	$scope.reset=function() {
+		$scope.lines.data.forEach(function(line,index){
+			if($scope.default_val[index]) {
+				$scope.lines.data[index].val=$scope.default_val[index];
 
+			} else {
+				line.val="";
+
+			}
+
+		});
+
+		//refresh
+		$scope.submit();	
+
+	};
+	
+	$scope.submit=function() {
+		var input=$scope.lines.data.reduce(function(prev,curr) {
+			if(curr.val)
+				return prev+curr.val+"\n";
+
+			return prev;
+		},"");
+
+		alert("Note to self: add in security for eval");
+		
+		salert=alert;	
+		(function(alert) {
+			try{
+				eval(input);
+			} catch(e) {
+				salert("Oops, error:\n "+e);
+		
+			};
+		})();
+	};
 }]);
 
 //Controller for the about page
