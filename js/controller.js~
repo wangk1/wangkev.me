@@ -1,4 +1,4 @@
-var app=angular.module('mwebsite',['mdirective','ngRoute']);
+var app=angular.module('mwebsite',['mdirective','ngRoute','mservice']);
 
 //Main Routing service
 
@@ -13,6 +13,9 @@ app.config(['$routeProvider','$locationProvider',function($rp,$lp) {
 		controller:'ctrlabout'	
 
 
+	}).when('/projects',{
+		templateUrl:'partials/dt-projects.html',
+		controller:'ctrlprojects'
 	}).otherwise({
 		redirectTo:'/home'	
 
@@ -51,7 +54,7 @@ app.controller('ctrlhome',['$scope',function($scope) {
 	//the default array containing the data to be resetted when the button is clicked
 	$scope.default_val=["//Feel free to change things around",
 	"var node=document.getElementById('greeting');",
-	"node.innerHTML='Hello, Kevin here';"];
+	"node.innerHTML='Hello, Kevin here.';"];
 
 	$scope.lines.data=[].concat((function c(number){
 				return $scope.lines.num>8? [{num:number,val:$scope.default_val[number]}]:
@@ -106,6 +109,11 @@ app.controller('ctrlabout',['$scope',function($scope) {
 
 }]);
 
+//The projects page controller
+app.controller('ctrlprojects',['$scope',function($scope) {
+	
+
+}]);
 
 //The bottom navigation bar
 app.controller('ctrlnav',['$scope',function($scope) {

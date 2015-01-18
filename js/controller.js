@@ -1,4 +1,4 @@
-var app=angular.module('mwebsite',['mdirective','ngRoute']);
+var app=angular.module('mwebsite',['mdirective','ngRoute','mservice']);
 
 //Main Routing service
 
@@ -13,6 +13,9 @@ app.config(['$routeProvider','$locationProvider',function($rp,$lp) {
 		controller:'ctrlabout'	
 
 
+	}).when('/projects',{
+		templateUrl:'partials/dt-projects.html',
+		controller:'ctrlprojects'
 	}).otherwise({
 		redirectTo:'/home'	
 
@@ -106,6 +109,11 @@ app.controller('ctrlabout',['$scope',function($scope) {
 
 }]);
 
+//The projects page controller
+app.controller('ctrlprojects',['$scope',function($scope) {
+	
+
+}]);
 
 //The bottom navigation bar
 app.controller('ctrlnav',['$scope',function($scope) {
