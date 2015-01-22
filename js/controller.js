@@ -110,9 +110,16 @@ app.controller('ctrlabout',['$scope',function($scope) {
 }]);
 
 //The projects page controller
-app.controller('ctrlprojects',['$scope',function($scope) {
-	
+app.controller('ctrlprojects',['$scope','$hexDraw','$global_vars',function($scope,$hexdraw,$global) {
 
+
+	var hex=$hexdraw.create_hexagon(new $hexdraw.Setting(150,100,$global.hexagon_radius,'#4DB84D'),{});
+	var hex2=$hexdraw.create_hexagon(new $hexdraw.Setting(350,200,60,'#4DB84D'),{});	
+	
+	$hexdraw.add_hexagon(1,hex);
+	$hexdraw.add_hexagon(2,hex2);	
+	
+	alert(window.innerHeight);
 }]);
 
 //The bottom navigation bar
